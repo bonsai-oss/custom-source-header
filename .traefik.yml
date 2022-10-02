@@ -1,0 +1,9 @@
+displayName: Custom Source Header
+type: middleware
+
+import: github.com/bonsai-oss/custom_source_header
+
+summary: 'Inject the remote address of the client into a selectable header.'
+
+testData:
+  headerName: X-Request-Source
