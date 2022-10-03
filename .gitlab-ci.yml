@@ -31,6 +31,12 @@ go_fmt:
   script:
     - go fmt ./...
 
+go_test:
+  image: golang
+  stage: test
+  script:
+    - go test -v ./...
+
 semantic_release:
   image: registry.fsrv.services/fsrvcorp/container/payipi:latest
   stage: release
